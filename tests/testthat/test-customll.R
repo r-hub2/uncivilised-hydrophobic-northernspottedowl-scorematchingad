@@ -1,4 +1,5 @@
 test_that("customll_test() returns TRUE or FALSE", {
+  skip_on_cran()
   suppressWarnings({out <- customll_test()})
   expect_true(out %in% c(TRUE, FALSE))
 })
